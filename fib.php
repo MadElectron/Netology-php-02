@@ -16,7 +16,6 @@
 
         function fib($n, $a = 1, $b = 1)
         {
-
             if ($a > $n)
                 echo "<p>Задуманное число <strong>НЕ входит</strong> в числовой ряд.</p>";
             elseif ($a == $n)
@@ -29,7 +28,6 @@
 
                 fib($n, $a, $b);
             }
-
         }
 
         $n =  $_GET['number'];
