@@ -14,38 +14,28 @@
 <body>
     <?php 
 
-        function fib($n)
+        function fib($n, $a = 1, $b = 1)
         {
-            $a = 1;
-            $b = 1;
 
-            while(true)
+            if ($a > $n)
+                echo "<p>Задуманное число <strong>НЕ входит</strong> в числовой ряд.</p>";
+            elseif ($a == $n)
+                echo "<p>Задуманное число <strong>входит</strong> в числовой ряд.</p>";
+            else
             {
+                $c = $a;
+                $a += $b;
+                $b = $c;
 
-                if ($a > $n)
-                {
-                    echo "<p>Задуманное число <strong>НЕ входит</strong> в числовой ряд.</p>";
-                    break 1;
-                }
-                elseif ($a == $n)
-                {
-                    echo "<p>Задуманное число <strong>входит</strong> в числовой ряд.</p>";
-                    break 1;
-                }
-                else
-                {
-                    $c = $a;
-                    $a += $b;
-                    $b = $c;
-                }
-
+                fib($n, $a, $b);
             }
+
         }
 
-        $number =  $_GET['number'];
+        $n =  $_GET['number'];
         echo "Введено число $number. <br>";
 
-        fib($number);
+        fib($n);
     ?>
     <a href="index.php">Назад</a>
 </body>
