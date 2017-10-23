@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ряд Фибонначи</title>
+    <title>Ряд Фибоначчи</title>
     <style type="text/css" media="screen">
         * {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
