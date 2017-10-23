@@ -31,7 +31,7 @@
         }
 
         $n =  $_GET['number'];
-        echo "Введено число $number. <br>";
+        echo "Введено число $n. <br>";
 
         fib($n);
     ?>
